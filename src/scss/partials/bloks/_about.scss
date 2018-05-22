@@ -1,0 +1,141 @@
+.about{
+	position: relative;
+	z-index: 10;
+	margin-bottom: 45px;
+	p{
+		font-size: 20px;
+		font-weight: 500;
+		margin-bottom: 30px;
+	}
+	&__inner{
+		width: 100%;
+		max-width: 1400px;
+		margin: 0 auto;
+		background-color: #fff;
+		border:  1px solid #b1b1b1;
+		position: relative;
+		&:after{
+			content: '';
+			position: absolute;
+			top: -10px;
+			right: -10px;
+			background-image: url("../img/about__after.png");
+			width: 471px;
+			height: 984px;
+		}
+	}
+	&__header{
+		padding: 26px 70px;
+		border-bottom: 1px solid #b1b1b1;
+		position: relative;
+		overflow: hidden;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 240px;
+			background-color: #bcbcbc;
+			width: 15px;
+			height: 100%;
+			transform: skewx(-45deg);
+		}
+		&:after{
+			content: '';
+			position: absolute;
+			top: 0;
+			right: -40px;
+			background-color: #bcbcbc;
+			width: 260px;
+			height: 100%;
+			transform: skewx(-45deg);
+		}
+		h3{
+			color: #373737;
+			font-size: 28px;
+			font-weight: bold;
+			text-decoration: none;
+			text-transform: uppercase;
+			margin: 0;
+		}
+	}
+	&__content{
+		padding: 55px;
+	}
+	&__title{
+		position: relative;
+		padding-left: 180px;
+		margin-bottom: 50px;
+		line-height: 1;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: #3f3f3f;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translate(0, -50%);
+			background-image: url("../img/about__logo.png");
+			width: 144px;
+			height: 163px;
+		}
+		.yellow{
+			color: #ffeb07;
+			font-size: 78px;
+		}
+		.small{
+			font-size: 33px;
+		}
+		.big{
+			font-size: 42px;
+
+		}
+	}
+	&__left{
+		width: 100%;
+		max-width: 810px;
+	}
+	&__group{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__item{
+		width: 390px;
+		display: flex;
+		align-content: space-between;
+		align-items: center;
+		margin-bottom: 50px;
+	}
+	&__img{
+		margin-right: 30px;
+	}
+	&__txt{
+		color: #3f3f3f;
+		font-size: 18px;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+	&__video{
+		position: absolute;
+		top: 380px;
+		right: 200px;
+		z-index: 10;
+		color: #000;
+		font-size: 28px;
+		text-transform: uppercase;
+		text-align: center;
+		cursor: pointer;
+		&:after{
+			content: '';
+			position: absolute;
+			top: -67px;
+			right: -116px;
+			background-image: url("../img/about__play.png");
+			background-repeat: no-repeat;
+			background-size: 100%;
+			width: 161px;
+			height: 161px;
+			z-index: -1;
+		}
+	}
+}

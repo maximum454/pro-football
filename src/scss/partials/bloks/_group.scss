@@ -1,0 +1,45 @@
+.group{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	z-index: 10;
+	&__item{
+		position: relative;
+		background-repeat: no-repeat;
+		background-position: top;
+		width: 260px;
+		height: 394px;
+		text-decoration: none;
+		cursor: pointer;
+		&.g1{
+			background-image: url("../img/3-4.png");
+			&:hover{
+				background-image: url("../img/3-4-hover.png");
+			}
+		}
+		&.g2{
+			background-image: url("../img/5-6.png");
+			&:hover{
+				background-image: url("../img/5-6-hover.png");
+			}
+		}
+		&.g3{
+			background-image: url("../img/7-8.png");
+			&:hover{
+				background-image: url("../img/7-8-hover.png");
+			}
+		}
+		&.g4{
+			background-image: url("../img/9-12.png");
+			&:hover{
+				background-image: url("../img/9-12-hover.png");
+			}
+		}
+		&.g5{
+			background-image: url("../img/13-16.png");
+			&:hover{
+				background-image: url("../img/13-16-hover.png");
+			}
+		}
+	}
+}
