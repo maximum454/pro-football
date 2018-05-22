@@ -1,0 +1,40 @@
+{
+  "name": "ProFootball",
+  "version": "1.0.0",
+  "description": "ERROR: No README data found!",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maximum454/pro-football.git"
+  },
+  "author": "MAD_MAX",
+  "license": "BSD",
+  "homepage": "https://github.com/maximum454/pro-football",
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^2.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-filesize": "0.0.6",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-plumber": "^1.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^3.2.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^2.1.2",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^4.3.11",
+    "imagemin-pngquant": "^5.1.0",
+    "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "cssmin": "^0.4.3"
+  }
+}

@@ -1,0 +1,50 @@
+.nav {
+  background-color: #1a2a75;
+  padding: 20px 0;
+  margin-bottom: 30px;
+  position: relative;
+  &:after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+  p{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+    line-height: 18px;
+    padding-left: 46px;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(0,-50%);
+    }
+    &.i250 {
+      padding-left: 58px;
+      &:before{
+        background-image: url("../img/nav-1.svg");
+        width: 42px;
+        height: 31px;
+      }
+    }
+    &.best {
+      &:before{
+        background-image: url("../img/nav-2.svg");
+        width: 31px;
+        height: 31px;
+      }
+    }
+    &.easy {
+      &:before{
+        background-image: url("../img/nav-3.svg");
+        width: 36px;
+        height: 35px;
+      }
+    }
+  }
+
+}

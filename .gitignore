@@ -1,0 +1,27 @@
+# cache directories
+Thumbs.db
+*.DS_Store
+*.empty
+*.[oa]
+*~
+
+#test
+
+#phpstorm project files
+.idea
+atlassian-ide-plugin.xml
+
+#netbeans project files
+nbproject
+
+#eclipse, zend studio, aptana or other eclipse like project files
+.buildpath
+.project
+.settings
+# Add any directories, files, or patterns you don't want to be tracked by version control
+node_modules
+.DS_Store
+src/.DS_Store
+src/js/.DS_Store
+src/scss/.DS_Store
+src/template/.DS_Store

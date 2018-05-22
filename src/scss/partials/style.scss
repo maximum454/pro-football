@@ -1,0 +1,22 @@
+/*mixin*/
+@import "base/mixin";
+@import 'base/normalize';
+@import 'base/color';
+@import 'base/fonts';
+@import "base/class";
+
+/*blocks vendors*/
+@import "vendors/slick";
+@import "vendors/arcticmodal-0.3";
+@import "vendors/formstyler";
+@import "vendors/formstyler.theme";
+
+/*blocks damutek*/
+@import "bloks/header";
+@import "bloks/nav";
+@import "bloks/main";
+@import "bloks/footer";
+
+
+
+
