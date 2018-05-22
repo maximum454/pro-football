@@ -1,0 +1,70 @@
+.clubs{
+	position: relative;
+	z-index: 10;
+	margin-bottom: 45px;
+	&__inner{
+		width: 100%;
+		max-width: 1400px;
+		margin: 0 auto;
+		background-color: #fff;
+		border:  1px solid #b1b1b1;
+		position: relative;
+	}
+	&__header{
+		padding: 26px 70px;
+		border-bottom: 1px solid #b1b1b1;
+		position: relative;
+		overflow: hidden;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 240px;
+			background-color: #bcbcbc;
+			width: 15px;
+			height: 100%;
+			transform: skewx(-45deg);
+		}
+		&:after{
+			content: '';
+			position: absolute;
+			top: 0;
+			right: -40px;
+			background-color: #bcbcbc;
+			width: 260px;
+			height: 100%;
+			transform: skewx(-45deg);
+		}
+		h3{
+			color: #373737;
+			font-size: 28px;
+			font-weight: bold;
+			text-decoration: none;
+			text-transform: uppercase;
+			margin: 0;
+		}
+	}
+	&__content{
+		padding: 55px;
+		position: relative;
+	}
+	&__title{
+		position: relative;
+		padding-left: 66px;
+		color: #404040;
+		font-size: 26px;
+		margin-bottom: 60px;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translate(0, -50%);
+			background-image: url("../img/subscription__title.png");
+			background-repeat: no-repeat;
+			background-size: 100%;
+			width: 44px;
+			height: 37px;
+		}
+	}
+}

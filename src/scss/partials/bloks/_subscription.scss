@@ -1,0 +1,141 @@
+.subscription{
+	position: relative;
+	z-index: 10;
+	margin-bottom: 145px;
+	&__inner{
+		width: 100%;
+		max-width: 1400px;
+		margin: 0 auto;
+		background-color: #fff;
+		border:  1px solid #b1b1b1;
+		position: relative;
+	}
+	&__header{
+		padding: 26px 70px;
+		border-bottom: 1px solid #b1b1b1;
+		position: relative;
+		overflow: hidden;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 240px;
+			background-color: #bcbcbc;
+			width: 15px;
+			height: 100%;
+			transform: skewx(-45deg);
+		}
+		&:after{
+			content: '';
+			position: absolute;
+			top: 0;
+			right: -40px;
+			background-color: #bcbcbc;
+			width: 260px;
+			height: 100%;
+			transform: skewx(-45deg);
+		}
+		h3{
+			color: #373737;
+			font-size: 28px;
+			font-weight: bold;
+			text-decoration: none;
+			text-transform: uppercase;
+			margin: 0;
+		}
+	}
+	&__content{
+		padding: 55px;
+		position: relative;
+		&:after{
+			content: '';
+			position: absolute;
+			bottom: -40px;
+			left: 50%;
+			transform: translate(-50%,0);
+			background-image: url("../img/subscription__after.png");
+			width: 1760px;
+			height: 302px;
+		}
+	}
+	&__title{
+		position: relative;
+		padding-left: 66px;
+		color: #404040;
+		font-size: 26px;
+		margin-bottom: 60px;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translate(0, -50%);
+			background-image: url("../img/subscription__title.png");
+			background-repeat: no-repeat;
+			background-size: 100%;
+			width: 44px;
+			height: 37px;
+		}
+	}
+	&__group{
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		position: relative;
+		z-index: 10;
+	}
+	&__item{
+		max-width: 354px;
+		width: 100%;
+		text-align: center;
+		color: #2b2b2b;
+		margin: 0 35px;
+	}
+	&__top{
+		background-color: #e5e5e5;
+		margin-bottom: 20px;
+		padding: 30px;
+		p{
+			font-size: 18px;
+			font-weight: 300;
+			text-transform: uppercase;
+		}
+	}
+	&__bottom{
+		background-color: #fafafa;
+		margin-bottom: 20px;
+		padding: 45px;
+		p{
+			font-size: 20px;
+			font-weight: 300;
+			text-transform: uppercase;
+			margin: 0 0 20px;
+			b{
+				font-size: 20px;
+				font-weight: 600;
+			}
+		}
+	}
+	&__type{
+		color: #2b2b2b;
+		font-size: 30px;
+	}
+	&__price{
+		color: #2b2b2b;
+		font-size: 48px;
+		line-height: 1;
+		font-weight: bold;
+	}
+	&__btn{
+		background-color: #ffeb07;
+		width: 100%;
+		height: 53px;
+		text-align: center;
+		color: #000;
+		font-size: 24px;
+		font-weight: bold;
+		border: none;
+		outline:none;
+		cursor: pointer;
+	}
+}

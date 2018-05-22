@@ -28,5 +28,11 @@
   font-weight: 300;
   font-style: italic;
 }
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy SemiBold'), local('Gilroy-SemiBold'), url('../fonts/Gilroy/Gilroy-SemiBold.otf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
 
 $fonts1: 'Gilroy', Arial, Helvetica, sans-serif;
