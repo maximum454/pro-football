@@ -1,0 +1,82 @@
+.top-panel{
+	position: relative;
+	background-image: url("../img/top-panel__bg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 0 20px 30px;
+	&__banner{
+		position: relative;
+		width: 100%;
+		max-width: 872px;
+		height: 80px;
+		margin: 0 auto;
+		overflow: hidden;
+		img{
+			width: 100%;
+			height: 100%;
+			display: block;
+			object-fit: cover;
+		}
+	}
+	&__inner{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 10px;
+		margin: 10px auto 30px;
+	}
+	&__right{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 1160px;
+	}
+	&__nav{
+		max-width: 800px;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-right: 30px;
+		a{
+			color: #fff;
+			font-size: 15px;
+			line-height: 1;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+	}
+	&__logo{
+		max-width: 367px;
+		width: 100%;
+		display: block;
+		text-decoration: none;
+		img{
+			width: 100%;
+			height: 100%;
+			display: block;
+			object-fit: cover;
+		}
+	}
+	&__social{
+	}
+	&__account{
+		position: relative;
+		padding-left: 50px;
+		color: #fff;
+		text-decoration: none;
+		text-transform: uppercase;
+		flex-shrink: 0;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translate(0, -50%);
+			background-image: url("../img/account__icon.png");
+			background-repeat: no-repeat;
+			width: 37px;
+			height: 37px;
+		}
+	}
+}

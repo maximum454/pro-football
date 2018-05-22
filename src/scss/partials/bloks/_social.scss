@@ -1,0 +1,23 @@
+.social{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 35px;
+	&__item{
+		background-image: url("../img/social__sprite.png");
+		background-repeat: no-repeat;
+		width: 37px;
+		height: 37px;
+		margin: 0 5px;
+		&.fb{
+			background-position: center left;
+		}
+		&.tw{
+			background-position: center;
+		}
+		&.inst{
+			background-position: center right;
+		}
+	}
+}

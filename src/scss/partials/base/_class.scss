@@ -4,6 +4,8 @@
 html, body{
 	height: 100%;
 	font-family: $fonts1;
+	background-image: url("../img/body__bg.png");
+	background-repeat: repeat-x;
 }
 .hidden{
 	display: none;

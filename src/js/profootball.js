@@ -4,5 +4,6 @@
 //= partials/jquery.formstyler.js
 
 $(function () {
+    $('input[type=checkbox],input[type=file], select').styler();
 });
 
