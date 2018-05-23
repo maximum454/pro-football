@@ -126,10 +126,12 @@
                     </div>
                 </div>
             </div>
-            <div id="modalbox_video" class="modal">
-                <div class="box-modal_close arcticmodal-close"></div>
-                <div class="modal__inner">
-        
+            <div class="hidden">
+                <div id="modalbox_video" class="modal">
+                    <div class="box-modal_close arcticmodal-close"></div>
+                    <div class="modal__inner">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/oIQvTphK3Zk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
         </section>
@@ -223,6 +225,61 @@
                 </div>
             </div>
         </div>
+        <div class="filial" id="filial">
+        
+        </div>
+        <div class="tournaments">
+            <div class="tournaments__inner">
+                <div class="tournaments__header">
+                    <h3>турнир</h3>
+                </div>
+        
+                <div class="ionTabs" id="tabs_1" data-name="Tabs_Group_name">
+                    <ul class="ionTabs__head">
+                        <li class="ionTabs__tab" data-target="Tab_1_name"><span>Турнир 1</span></li>
+                        <li class="ionTabs__tab" data-target="Tab_2_name"><span>Турнир 2</span></li>
+                        <li class="ionTabs__tab" data-target="Tab_3_name"><span>Турнир 3</span></li>
+                        <li class="ionTabs__tab" data-target="Tab_4_name"><span>Турнир 4</span></li>
+                        <li class="ionTabs__tab" data-target="Tab_5_name"><span>Турнир 5</span></li>
+                    </ul>
+                    <div class="ionTabs__body">
+                        <div class="ionTabs__item" data-name="Tab_1_name">
+                            <div class="cards">
+                                <div class="cards__inner">
+                                    <div class="cards__item">
+                                        <div class="cards__header">Результаты</div>
+                                        <div class="cards__info">
+        
+                                            <div class="cards__data">05.05.2018 12:00</div>
+                                            <div class="cards__commands">
+                                                <div class="cards__name">“Тарлан”</div>
+                                                <div class="cards__count">3:1</div>
+                                                <div class="cards__name">“Жастар”</div>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ionTabs__item" data-name="Tab_2_name">
+                            Контент вкладки 2
+                        </div>
+                        <div class="ionTabs__item" data-name="Tab_3_name">
+                            Контент вкладки 3
+                        </div>
+                        <div class="ionTabs__item" data-name="Tab_4_name">
+                            Контент вкладки 4
+                        </div>
+                        <div class="ionTabs__item" data-name="Tab_5_name">
+                            Контент вкладки 5
+                        </div>
+        
+                        <div class="ionTabs__preloader"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
     </main>
@@ -266,10 +323,52 @@
         </div>
     </footer>
 </div>
-<div id="modalbox_reg" class="modal">
-    <div class="box-modal_close arcticmodal-close"></div>
-    <div class="modal__inner">
-
+<div class="hidden">
+    <div id="modalbox_reg" class="modal">
+        <div class="box-modal_close arcticmodal-close"></div>
+        <div class="modal__inner">
+            <header class="modal__header">Заполните форму и мы свяжемся с Вами</header>
+            <form action="" class="modal__form">
+                <div class="modal__item">
+                    <input class="modal__input" type="text" placeholder="ИМЯ">
+                </div>
+                <div class="modal__item">
+                    <input class="modal__input" type="text" placeholder="ТЕЛЕФОН">
+                </div>
+                <div class="modal__item">
+                    <input class="modal__input" type="text" placeholder="EMAIL">
+                </div>
+                <div class="modal__select">
+                    <select name="" id="">
+                        <option value="">ВЫБЕРИТЕ ГОРОД</option>
+                        <option value="Караганда">Караганда</option>
+                        <option value="Алматы">Алматы</option>
+                        <option value="Астана">Астана</option>
+                        <option value="Тараз">Тараз</option>
+                        <option value="Шымкент">Шымкент</option>
+                        <option value="Костанай">Костанай</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">ВОЗРАСТ РЕБЕНКА</option>
+                        <option value="Караганда">3-4,5 лет</option>
+                        <option value="Алматы">5-6 лет</option>
+                        <option value="Астана">7-8 лет</option>
+                        <option value="Тараз">9-12 лет</option>
+                        <option value="Шымкент">13-16 лет</option>
+                    </select>
+                </div>
+                <div class="modal__item">
+                    <button class="modal__btn">ОТПРАВИТЬ</button>
+                </div>
+            </form>
+            <p>Единый call-center:<br>
+                <b>+7 (701) 816 19 90</b></p>
+            <div class="social">
+                <a href="#" class="social__item fb"></a>
+                <a href="#" class="social__item tw"></a>
+                <a href="#" class="social__item inst"></a>
+            </div>
+        </div>
     </div>
 </div>
 <script src="js/profootball.js"></script>

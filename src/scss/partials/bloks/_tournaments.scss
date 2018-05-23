@@ -1,3 +1,51 @@
 .tournaments{
-
+	position: relative;
+	z-index: 10;
+	margin-bottom: 45px;
+	padding: 0 20px;
+	&__inner{
+		width: 100%;
+		max-width: 1400px;
+		margin: 0 auto;
+		background-color: #fff;
+		border:  1px solid #b1b1b1;
+		position: relative;
+	}
+	&__header{
+		padding: 26px 70px;
+		border-bottom: 1px solid #b1b1b1;
+		position: relative;
+		overflow: hidden;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 240px;
+			background-color: #ffeb07;
+			width: 15px;
+			height: 100%;
+			transform: skewx(-45deg);
+		}
+		&:after{
+			content: '';
+			position: absolute;
+			top: 0;
+			right: -40px;
+			background-color: #ffeb07;
+			width: 260px;
+			height: 100%;
+			transform: skewx(-45deg);
+		}
+		h3{
+			color: #373737;
+			font-size: 28px;
+			font-weight: bold;
+			text-decoration: none;
+			text-transform: uppercase;
+			margin: 0;
+		}
+	}
+	&__content{
+		padding: 55px;
+	}
 }

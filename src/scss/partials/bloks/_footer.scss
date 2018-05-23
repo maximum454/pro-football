@@ -71,4 +71,55 @@
 			text-transform: uppercase;
 		}
 	}
+	.jq-selectbox {
+		vertical-align: middle;
+		cursor: pointer;
+		position: relative;
+		&:after{
+			content: '';
+			position: absolute;
+			top: 50%;
+			right: -47px;
+			transform: translate(0, -50%);
+			background-image: url("../img/location.png");
+			background-repeat: no-repeat;
+			width: 27px;
+			height: 37px;
+		}
+		&__select {
+			display: flex;
+			align-items: center;
+			width: 140px;
+			height: 32px;
+			padding: 0 34px 0 10px;
+			border: 1px solid #fff;
+			border-radius: 4px;
+			color: #fff;
+			font-size: 16px;
+		}
+		&__select-text {
+			display: block;
+			width: 100%;
+		}
+		&__trigger {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 34px;
+			height: 100%;
+		}
+		&__trigger-arrow {
+			position: absolute;
+			top: 14px;
+			right: 12px;
+			width: 0;
+			height: 0;
+			border-top: 5px solid #fff;
+			border-right: 5px solid transparent;
+			border-left: 5px solid transparent;
+		}
+		.placeholder {
+			color: #fff;
+		}
+	}
 }

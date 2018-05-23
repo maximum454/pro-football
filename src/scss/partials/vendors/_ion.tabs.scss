@@ -1,0 +1,47 @@
+.ionTabs {
+	position: relative;
+	&__head {
+		position: relative;
+		display: block;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		z-index: 1;
+		zoom: 1;
+		&:before,
+		&:after {
+			content: "";
+			display: table;
+		}
+		&:after {
+			clear: both;
+		}
+	}
+	&__tab {
+		position: relative;
+		display: block;
+		float: left;
+		list-style-type: none;
+		background: none;
+		margin: 0;
+		padding: 0;
+		cursor: pointer;
+		&_state_active {
+			cursor: default;
+		}
+	}
+	&__body {
+		position: relative;
+		z-index: 2;
+	}
+	&__item {
+		position: relative;
+		display: none;
+		&_state_active {
+			display: block;
+		}
+	}
+	&__preloader {
+		position: relative;
+	}
+}

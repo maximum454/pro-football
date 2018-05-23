@@ -172,17 +172,6 @@
 	vertical-align: middle;
 	cursor: pointer;
 	position: relative;
-	&:after{
-		content: '';
-		position: absolute;
-		top: 50%;
-		right: -47px;
-		transform: translate(0, -50%);
-		background-image: url("../img/location.png");
-		background-repeat: no-repeat;
-		width: 27px;
-		height: 37px;
-	}
 	&__select {
 		display: flex;
 		align-items: center;

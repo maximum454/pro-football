@@ -1,0 +1,39 @@
+.cards{
+	position: relative;
+	&__inner{
+
+	}
+	&__item{
+
+	}
+	&__header{
+		padding: 15px 20px;
+		border-bottom: 1px solid #e8e8e8;
+		font-size: 24px;
+		font-weight: 600;
+	}
+	&__info{
+		padding: 15px 20px;
+		border-bottom: 1px solid #e8e8e8;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__data{
+		font-size: 15px;
+		font-weight: 300;
+	}
+	&__commands{
+		width: 300px;
+		display: flex;
+		align-items: center;
+	}
+	&__name{
+		font-size: 15px;
+		font-weight: 500;
+	}
+	&__count{
+		font-size: 29px;
+		font-weight: bold;
+	}
+
+}

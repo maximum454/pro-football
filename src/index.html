@@ -18,15 +18,59 @@
         </div>
         //= template/subscription.html
         //= template/clubs.html
+        //= template/filial.html
+        //= template/tournaments.html
 
 
     </main>
     //= template/footer.html
 </div>
-<div id="modalbox_reg" class="modal">
-    <div class="box-modal_close arcticmodal-close"></div>
-    <div class="modal__inner">
-
+<div class="hidden">
+    <div id="modalbox_reg" class="modal">
+        <div class="box-modal_close arcticmodal-close"></div>
+        <div class="modal__inner">
+            <header class="modal__header">Заполните форму и мы свяжемся с Вами</header>
+            <form action="" class="modal__form">
+                <div class="modal__item">
+                    <input class="modal__input" type="text" placeholder="ИМЯ">
+                </div>
+                <div class="modal__item">
+                    <input class="modal__input" type="text" placeholder="ТЕЛЕФОН">
+                </div>
+                <div class="modal__item">
+                    <input class="modal__input" type="text" placeholder="EMAIL">
+                </div>
+                <div class="modal__select">
+                    <select name="" id="">
+                        <option value="">ВЫБЕРИТЕ ГОРОД</option>
+                        <option value="Караганда">Караганда</option>
+                        <option value="Алматы">Алматы</option>
+                        <option value="Астана">Астана</option>
+                        <option value="Тараз">Тараз</option>
+                        <option value="Шымкент">Шымкент</option>
+                        <option value="Костанай">Костанай</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">ВОЗРАСТ РЕБЕНКА</option>
+                        <option value="Караганда">3-4,5 лет</option>
+                        <option value="Алматы">5-6 лет</option>
+                        <option value="Астана">7-8 лет</option>
+                        <option value="Тараз">9-12 лет</option>
+                        <option value="Шымкент">13-16 лет</option>
+                    </select>
+                </div>
+                <div class="modal__item">
+                    <button class="modal__btn">ОТПРАВИТЬ</button>
+                </div>
+            </form>
+            <p>Единый call-center:<br>
+                <b>+7 (701) 816 19 90</b></p>
+            <div class="social">
+                <a href="#" class="social__item fb"></a>
+                <a href="#" class="social__item tw"></a>
+                <a href="#" class="social__item inst"></a>
+            </div>
+        </div>
     </div>
 </div>
 <script src="js/profootball.js"></script>
