@@ -1,7 +1,8 @@
 .clubs{
 	position: relative;
 	z-index: 10;
-	margin-bottom: 45px;
+	margin-bottom: 245px;
+	padding: 0 20px;
 	&__inner{
 		width: 100%;
 		max-width: 1400px;
@@ -50,7 +51,7 @@
 		&:before{
 			content: '';
 			position: absolute;
-			top: 10px;
+			top: 40px;
 			left: -240px;
 			background-image: url("../img/clubs__before.png");
 			background-repeat: no-repeat;

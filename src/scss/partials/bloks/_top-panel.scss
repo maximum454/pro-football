@@ -23,7 +23,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding: 10px;
+		padding: 10px 0;
 		margin: 10px auto 30px;
 	}
 	&__right{
@@ -78,6 +78,14 @@
 			background-repeat: no-repeat;
 			width: 37px;
 			height: 37px;
+		}
+	}
+	@include r(1400){
+		&__right{
+			width: 980px;
+		}
+		&__nav{
+			max-width: 550px;
 		}
 	}
 }
