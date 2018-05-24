@@ -20,7 +20,6 @@
 		font-size: 20px;
 		text-align: center;
 		text-transform: uppercase;
-		transform: skewx(-45deg);
 		border-right: 1px solid #b1b1b1;
 		&:hover {
 			background: #e5e5e5;
@@ -31,10 +30,6 @@
 		&_state_active {
 			background: #e0e0e0;
 			font-weight: bold;
-		}
-		span{
-			display: block;
-			transform: skewx(45deg);
 		}
 	}
 	&__body {

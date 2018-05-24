@@ -3,7 +3,7 @@
 //= partials/slick.min.js
 //= partials/jquery.arcticmodal-0.3.min.js
 //= partials/jquery.formstyler.js
-
+//= partials/masonry.pkgd.js
 
 $(function () {
     $('input[type=checkbox],input[type=file], select').styler();
@@ -23,6 +23,8 @@ $(function () {
         $('body,html').animate({scrollTop: top-50}, 1500);
     });
 
-    $.ionTabs("#tabs_1");
+    $.ionTabs("#tabs_1, #tabs_2, #tabs_3");
+
+
 });
 

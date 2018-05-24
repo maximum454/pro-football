@@ -5,7 +5,7 @@
 	padding: 0 20px;
 	&__inner{
 		width: 100%;
-		max-width: 1400px;
+		max-width: 1440px;
 		margin: 0 auto;
 		background-color: #fff;
 		border:  1px solid #b1b1b1;
@@ -48,4 +48,47 @@
 	&__content{
 		padding: 55px;
 	}
+	.ionTabs {
+		 &__head {
+			 display: flex;
+			 justify-content: space-between;
+			 align-items: center;
+			 border-bottom: 1px solid #b1b1b1;
+			 position: relative;
+			 overflow: hidden;
+			 &:before,
+			 &:after {
+				 content: "";
+				 display: none;
+			 }
+		 }
+		 &__tab {
+			 width: 100%;
+			 max-width: 281px;
+			 padding: 25px;
+			 color: #333333;
+			 font-size: 20px;
+			 text-align: center;
+			 text-transform: uppercase;
+			 transform: skewx(-45deg);
+			 border-right: 1px solid #b1b1b1;
+			 &:hover {
+				 background: #e5e5e5;
+			 }
+			 &:last-of-type{
+				 border-right: none;
+			 }
+			 &_state_active {
+				 background: #e0e0e0;
+				 font-weight: bold;
+			 }
+			 span{
+				 display: block;
+				 transform: skewx(45deg);
+			 }
+		 }
+		 &__body {
+			 padding: 30px 48px;
+		 }
+	 }
 }
