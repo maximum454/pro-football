@@ -1,10 +1,23 @@
 .cards{
 	position: relative;
 	&__inner{
-
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		&:after{
+			content: '';
+			display: table;
+			clear: both;
+		}
 	}
 	&__item{
-
+		max-width: 640px;
+		width: 100%;
+		margin-bottom: 23px;
+		box-shadow: 0 0 30px -5px rgba(#000, .5);
+		border: 1px solid #cecece;
+		position: relative;
 	}
 	&__header{
 		padding: 15px 20px;
@@ -16,14 +29,16 @@
 		padding: 15px 20px;
 		border-bottom: 1px solid #e8e8e8;
 		display: flex;
-		justify-content: space-between;
+		align-items: center;
 	}
 	&__data{
 		font-size: 15px;
 		font-weight: 300;
+		width: 160px;
 	}
 	&__commands{
 		width: 300px;
+		margin-left: 34px;
 		display: flex;
 		align-items: center;
 	}
@@ -32,8 +47,58 @@
 		font-weight: 500;
 	}
 	&__count{
+		width: 141px;
+		text-align: center;
 		font-size: 29px;
 		font-weight: bold;
 	}
-
+	&__gol{
+		display: flex;
+		align-items: center;
+		padding: 15px 0;
+		background-color: #fcfcfc;
+	}
+	&__peaple{
+		padding: 15px 0;
+		background-color: #f6f6f6;
+		display: flex;
+		align-items: center;
+	}
+	&__list{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		li{
+			color: #000;
+			font-size: 12px;
+		}
+		&.right{
+			text-align: right;
+		}
+	}
+	&__shedule{
+		padding: 15px 0;
+		background-color: #fcfcfc;
+		text-align: center;
+		p{
+			color: #000;
+			font-size: 15px;
+			font-weight: 300;
+			margin: 0 0 30px;
+			&:last-of-type{
+				margin-bottom: 0;
+			}
+		}
+	}
+	&__ball{
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		background-image: url("../img/ball.png");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 14px;
+		height: 14px;
+		margin-right: 5px;
+	}
 }
