@@ -17,7 +17,7 @@ $(function () {
     });
 
     $('input[type=checkbox],input[type=file], select').styler();
-    $('.popap_box').click(function() {
+    $('.popap_box').click(function () {
         $('#modalbox_' + $(this).data('body')).arcticmodal({
             overlay: {
                 css: {
@@ -26,14 +26,20 @@ $(function () {
             }
         });
     });
-    $("#menu").on("click","a", function (event) {
+    $("#menu").on("click", "a", function (event) {
         event.preventDefault();
-        var id  = $(this).attr('href'),
+        var id = $(this).attr('href'),
             top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top-50}, 1500);
+        $('body,html').animate({scrollTop: top - 50}, 1500);
     });
 
-    $.ionTabs("#tabs_1, #tabs_2, #tabs_3");
+
+    $.ionTabs("#tabs_1, #tabs_2, #tabs_3", {
+        type: "storage",
+        onChange: function (obj) {
+
+        }
+    });
 
     $('.js-map-slider').slick({
         autoplay: true,

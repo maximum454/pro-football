@@ -1,8 +1,59 @@
 .filial{
 	position: relative;
 	z-index: 10;
-	margin-bottom: 245px;
+	margin-bottom: 45px;
 	padding: 0 20px;
+	.ionTabs {
+		&__tabs{
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			&_state_active {
+				background: #e0e0e0;
+				font-weight: bold;
+			}
+		}
+		&__head {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			border-bottom: 1px solid #b1b1b1;
+			position: relative;
+			overflow: hidden;
+			&:before,
+			&:after {
+				content: "";
+				display: none;
+			}
+		}
+		&__tab {
+			width: 100%;
+			max-width: 100%;
+			padding: 25px;
+			color: #333333;
+			font-size: 26px;
+			margin-bottom: 20px;
+			border: none;
+			float: none;
+			text-align: center;
+			&:last-of-type{
+				border-right: none;
+			}
+			&_state_active {
+				background: transparent;
+				font-weight: bold;
+			}
+		}
+		&__body {
+			background-color: #fff;
+			width: 1030px;
+			border: 1px solid #b1b1b1;
+			padding: 0;
+			.ionTabs__body{
+				border: none;
+			}
+		}
+	}
 	&__inner{
 		width: 100%;
 		max-width: 1400px;
@@ -42,11 +93,9 @@
 			margin: 0;
 		}
 	}
-
-
-	&__head {
+	&__aside {
 		width: 350px;
-		margin: 0;
+		margin: 0 20px 0 0;
 		padding: 0;
 		list-style: none;
 		text-transform: uppercase;
@@ -65,54 +114,50 @@
 		margin-top: 25px;
 		width: 350px;
 	}
-	.ionTabs {
-		&__tabs{
-			display: flex;
-			justify-content: space-between;
-			width: 100%;
-			&_state_active {
-				background: #e0e0e0;
-				font-weight: bold;
-			}
+	&__head{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 1px solid #b1b1b1;
+		position: relative;
+		overflow: hidden;
+		&:before,
+		&:after {
+			content: "";
+			display: none;
 		}
-		&__head {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			border-bottom: 1px solid #b1b1b1;
-			position: relative;
-			overflow: hidden;
-			&:before,
-			&:after {
-				content: "";
-				display: none;
-			}
+	}
+	&__tab{
+		margin: 0!important;
+		width: 100%;
+		max-width: 281px;
+		padding: 25px;
+		color: #333333;
+		font-size: 20px;
+		text-align: center;
+		text-transform: uppercase;
+		transform: skewx(-45deg);
+		border-right: 1px solid #b1b1b1!important;
+		&:hover {
+			background: #e5e5e5;
 		}
-		&__tab {
-			width: 100%;
-			max-width: 100%;
-			padding: 25px;
-			color: #333333;
-			font-size: 26px;
-			margin-bottom: 20px;
-			border: none;
-			float: none;
-			&:last-of-type{
-				border-right: none;
-			}
-			&_state_active {
-				background: transparent;
-				font-weight: bold;
-			}
+		&:last-of-type{
+			border-right: none!important;
 		}
-		&__body {
-			background-color: #fff;
-			width: 1030px;
-			border: 1px solid #b1b1b1;
-			padding: 0;
-			.ionTabs__body{
-				border: none;
-			}
+		&_state_active {
+			background: #e0e0e0;
+			font-weight: bold;
 		}
+		span{
+			display: block;
+			transform: skewx(45deg);
+		}
+	}
+	&__body{
+		width: 100% !important;
+		padding: 60px;
+	}
+	&__item{
+
 	}
 }

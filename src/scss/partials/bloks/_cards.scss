@@ -101,4 +101,9 @@
 		height: 14px;
 		margin-right: 5px;
 	}
+	@include r(1366){
+		&__item{
+			max-width: 600px;
+		}
+	}
 }
