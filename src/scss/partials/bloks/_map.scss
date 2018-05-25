@@ -40,6 +40,7 @@
 			left: 319px;
 			width: 363px;
 			height: 413px;
+			z-index: 9;
 			&:hover{
 				background-image: url("../img/map__kost.png");
 				color: transparent;
@@ -56,6 +57,7 @@
 			left: 560px;
 			width: 385px;
 			height: 235px;
+			z-index: 8;
 			&:hover{
 				background-image: url("../img/map__astana.png");
 				color: transparent;
@@ -72,6 +74,7 @@
 			left: 446px;
 			width: 657px;
 			height: 317px;
+			z-index: 7;
 			&:hover{
 				background-image: url("../img/map__karaganda.png");
 				color: transparent;
