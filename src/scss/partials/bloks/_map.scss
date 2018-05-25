@@ -1,0 +1,134 @@
+.map{
+	width: 100vw;
+	height: calc(100vh - 181px);
+	background-image: url("../img/map__bg.jpg");
+	background-size: cover;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	&__inner{
+		position: relative;
+		width: 1528px;
+		min-width: 1528px;
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			display: block;
+		}
+	}
+	&__bg{
+		opacity: .6;
+	}
+	&__item{
+		position: absolute;
+		top: 0;
+		color: #fff;
+		font-size: 34px;
+		font-weight: 500;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		text-decoration: none;
+		display: block;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		img{
+			max-width: 100%	;
+		}
+		&.kost{
+			top: 52px;
+			left: 319px;
+			width: 363px;
+			height: 413px;
+			&:hover{
+				background-image: url("../img/map__kost.png");
+				color: transparent;
+			}
+			span{
+				position: relative;
+				top: 124px;
+				left: 21px;
+			}
+
+		}
+		&.astana{
+			top: 120px;
+			left: 560px;
+			width: 385px;
+			height: 235px;
+			&:hover{
+				background-image: url("../img/map__astana.png");
+				color: transparent;
+			}
+			span{
+				position: relative;
+				top: 98px;
+				left: 152px;
+			}
+
+		}
+		&.karaganda{
+			top: 279px;
+			left: 446px;
+			width: 657px;
+			height: 317px;
+			&:hover{
+				background-image: url("../img/map__karaganda.png");
+				color: transparent;
+			}
+			span{
+				position: relative;
+				top: 126px;
+				left: 240px;
+			}
+
+		}
+		&.taraz{
+			top: 597px;
+			left: 733px;
+			width: 290px;
+			height: 197px;
+			&:hover{
+				background-image: url("../img/map__taraz.png");
+				color: transparent;
+			}
+			span{
+				position: relative;
+				top: 66px;
+				left: 83px;
+			}
+
+		}
+		&.shimkent{
+			top: 597px;
+			left: 554px;
+			width: 255px;
+			height: 289px;
+			&:hover{
+				background-image: url("../img/map__shimkent.png");
+				color: transparent;
+			}
+			span{
+				position: relative;
+				top: 177px;
+				left: 0;
+			}
+
+		}
+		&.almaty{
+			top: 521px;
+			right: 208px;
+			width: 386px;
+			height: 282px;
+			span{
+				position: relative;
+				top: 165px;
+				left: 109px;
+			}
+			&:hover{
+				background-image: url("../img/map__almaty.png");
+				color: transparent;
+			}
+		}
+	}
+}

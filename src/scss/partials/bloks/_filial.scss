@@ -108,7 +108,11 @@
 		&__body {
 			background-color: #fff;
 			width: 1030px;
-			padding: 30px 48px;
+			border: 1px solid #b1b1b1;
+			padding: 0;
+			.ionTabs__body{
+				border: none;
+			}
 		}
 	}
 }

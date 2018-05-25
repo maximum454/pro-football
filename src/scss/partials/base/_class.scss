@@ -29,3 +29,38 @@ html, body{
 		object-fit: cover;
 	}
 }
+.contact-us{
+	position: fixed;
+	top: 0;
+	right: 0;
+	background-color: #a41f1f;
+	width: 86px;
+	height: 86px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 10;
+	&__hand{
+		background-image: url("../img/hand.png");
+		background-repeat: no-repeat;
+		width: 32px;
+		height: 47px;
+	}
+	&__txt{
+		position: absolute;
+		top: 200px;
+		color: #fff;
+		font-size: 15px;
+		font-weight: bold;
+		transform: rotate(-90deg);
+		&:after{
+			content: '';
+			position: absolute;
+			top: 8px;
+			right: -62px;
+			background-color: #fff;
+			height: 1px;
+			width: 47px;
+		}
+	}
+}

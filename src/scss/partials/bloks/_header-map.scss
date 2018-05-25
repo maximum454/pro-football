@@ -1,0 +1,22 @@
+.header-map{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 20px 110px 20px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	h1{
+		color: #fff;
+		font-size: 52px;
+		line-height: 1;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	&__right{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
