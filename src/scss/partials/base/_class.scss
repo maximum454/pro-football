@@ -34,23 +34,25 @@ html, body{
 	top: 0;
 	right: 0;
 	background-color: #a41f1f;
-	width: 86px;
-	height: 86px;
+	width: 60px;
+	height: 60px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	z-index: 1000;
 	transition: .3s;
+	opacity: 0;
 	&__hand{
 		background-image: url("../img/hand.png");
 		background-repeat: no-repeat;
-		width: 32px;
-		height: 47px;
+		background-size: 100%;
+		width: 19px;
+		height: 27px;
 	}
 	&__txt{
 		position: absolute;
 		top: 200px;
-		color: #fff;
+		color: #a41f1f;
 		font-size: 15px;
 		font-weight: bold;
 		transform: rotate(-90deg);
@@ -59,12 +61,13 @@ html, body{
 			position: absolute;
 			top: 8px;
 			right: -62px;
-			background-color: #fff;
+			background-color: #a41f1f;
 			height: 1px;
 			width: 47px;
 		}
 	}
 	&.top{
 		top: 77px;
+		opacity: 1;
 	}
 }
