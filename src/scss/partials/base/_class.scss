@@ -39,7 +39,8 @@ html, body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	z-index: 100;
+	z-index: 1000;
+	transition: .3s;
 	&__hand{
 		background-image: url("../img/hand.png");
 		background-repeat: no-repeat;
@@ -62,5 +63,8 @@ html, body{
 			height: 1px;
 			width: 47px;
 		}
+	}
+	&.top{
+		top: 77px;
 	}
 }

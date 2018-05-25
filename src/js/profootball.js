@@ -6,6 +6,16 @@
 //= partials/masonry.pkgd.js
 
 $(function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 80) {
+            $('#menu-fix').addClass("fix");
+            $('.contact-us').addClass("top");
+        } else {
+            $('#menu-fix').removeClass("fix");
+            $('.contact-us').removeClass("top");
+        }
+    });
+
     $('input[type=checkbox],input[type=file], select').styler();
     $('.popap_box').click(function() {
         $('#modalbox_' + $(this).data('body')).arcticmodal({
@@ -34,5 +44,7 @@ $(function () {
         fade: true,
         cssEase: 'linear'
     });
+
+
 });
 

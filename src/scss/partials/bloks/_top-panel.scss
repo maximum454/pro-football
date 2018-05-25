@@ -1,45 +1,55 @@
-.top-panel{
+.top-panel {
 	position: relative;
 	background-image: url("../img/top-panel__bg.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 0 20px 30px;
 	z-index: 100;
-	&__banner{
+	.fix {
+		z-index: 9999;
+		position: fixed;
+		left: 0;
+		top: 0;
+		margin: 0;
+		padding: 20px;
+		width: 100%;
+		background-color: #08141C;
+	}
+	&__banner {
 		position: relative;
 		width: 100%;
 		max-width: 872px;
 		height: 80px;
 		margin: 0 auto;
 		overflow: hidden;
-		img{
+		img {
 			width: 100%;
 			height: 100%;
 			display: block;
 			object-fit: cover;
 		}
 	}
-	&__inner{
+	&__inner {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		padding: 10px 0;
 		margin: 10px auto 30px;
 	}
-	&__right{
+	&__right {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		width: 1160px;
 	}
-	&__nav{
+	&__nav {
 		max-width: 800px;
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		margin-right: 30px;
-		a{
+		a {
 			color: #fff;
 			font-size: 15px;
 			line-height: 1;
@@ -47,28 +57,28 @@
 			text-transform: uppercase;
 		}
 	}
-	&__logo{
+	&__logo {
 		max-width: 367px;
 		width: 100%;
 		display: block;
 		text-decoration: none;
-		img{
+		img {
 			width: 100%;
 			height: 100%;
 			display: block;
 			object-fit: cover;
 		}
 	}
-	&__social{
+	&__social {
 	}
-	&__account{
+	&__account {
 		position: relative;
 		padding-left: 50px;
 		color: #fff;
 		text-decoration: none;
 		text-transform: uppercase;
 		flex-shrink: 0;
-		&:before{
+		&:before {
 			content: '';
 			position: absolute;
 			top: 50%;
@@ -80,11 +90,11 @@
 			height: 37px;
 		}
 	}
-	@include r(1400){
-		&__right{
+	@include r(1400) {
+		&__right {
 			width: 980px;
 		}
-		&__nav{
+		&__nav {
 			max-width: 550px;
 		}
 	}
@@ -92,7 +102,7 @@
 		vertical-align: middle;
 		cursor: pointer;
 		position: relative;
-		&:after{
+		&:after {
 			content: '';
 			position: absolute;
 			top: 50%;
