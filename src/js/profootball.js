@@ -25,6 +25,14 @@ $(function () {
 
     $.ionTabs("#tabs_1, #tabs_2, #tabs_3");
 
-
+    $('.js-map-slider').slick({
+        autoplay: true,
+        dots: false,
+        arrows: false,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+    });
 });
 

@@ -131,4 +131,112 @@
 			}
 		}
 	}
+	@include r(1366){
+		&__inner{
+			width: 1200px;
+			min-width: 1200px;
+			height: 100%;
+			img{
+				width: auto;
+			}
+		}
+		&__item{
+			font-size: 21px;
+			background-size: 100%;
+			img{
+				max-width: 100%	;
+			}
+			&.kost{
+				top: 42px;
+				left: 216px;
+				width: 233px;
+				height: 266px;
+				&:hover{
+					background-image: url("../img/map__kost.png");
+				}
+				span{
+					top: 80px;
+					left: 13px;
+				}
+
+			}
+			&.astana{
+				top: 81px;
+				left: 372px;
+				width: 253px;
+				height: 189px;
+				&:hover{
+					background-image: url("../img/map__astana.png");
+					color: transparent;
+				}
+				span{
+					top: 65px;
+					left: 101px;
+				}
+
+			}
+			&.karaganda{
+				top: 185px;
+				left: 296px;
+				width: 428px;
+				height: 213px;
+				&:hover{
+					background-image: url("../img/map__karaganda.png");
+					color: transparent;
+				}
+				span{
+					top: 83px;
+					left: 156px;
+				}
+
+			}
+			&.taraz{
+				top: 396px;
+				left: 485px;
+				width: 186px;
+				height: 125px;
+
+				&:hover{
+					background-image: url("../img/map__taraz.png");
+					color: transparent;
+				}
+				span{
+					top: 42px;
+					left: 54px;
+				}
+
+			}
+			&.shimkent{
+				top: 396px;
+				left: 369px;
+				width: 165px;
+				height: 185px;
+				&:hover{
+					background-image: url("../img/map__shimkent.png");
+					color: transparent;
+				}
+				span{
+					top: 115px;
+					left: 0;
+				}
+
+			}
+			&.almaty{
+				top: 344px;
+				right: 332px;
+				width: 249px;
+				height: 173px;
+
+				&:hover{
+					background-image: url("../img/map__almaty.png");
+					color: transparent;
+				}
+				span{
+					top: 108px;
+					left: 70px;
+				}
+
+			}
+		}
+	}
 }
