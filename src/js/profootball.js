@@ -17,6 +17,7 @@ $(function () {
     });
 
     $('input[type=checkbox],input[type=file], select').styler();
+
     $('.popap_box').click(function () {
         $('#modalbox_' + $(this).data('body')).arcticmodal({
             overlay: {
@@ -48,6 +49,16 @@ $(function () {
         infinite: true,
         speed: 500,
         fade: true,
+        cssEase: 'linear'
+    });
+    $('.js-slider').slick({
+        autoplay: false,
+        dots: false,
+        arrows: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        adaptiveHeight: true,
         cssEase: 'linear'
     });
 

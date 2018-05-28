@@ -3,13 +3,8 @@
 	&__inner{
 		display: flex;
 		align-items: flex-start;
-		justify-content: space-between;
+		justify-content: space-around;
 		flex-wrap: wrap;
-		&:after{
-			content: '';
-			display: table;
-			clear: both;
-		}
 	}
 	&__item{
 		max-width: 640px;
@@ -103,7 +98,7 @@
 	}
 	@include r(1366){
 		&__item{
-			max-width: 600px;
+			max-width: 560px;
 		}
 	}
 }

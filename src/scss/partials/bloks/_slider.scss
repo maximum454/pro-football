@@ -1,0 +1,49 @@
+.slider{
+	position: relative;
+	&__item{
+		margin: 0 auto;
+		color:#333333;
+		text-align: center;
+		position: relative;
+		outline: none;
+	}
+	&__img{
+		margin-bottom: 20px;
+		img{
+			display: block;
+			margin: 0 auto;
+		}
+	}
+	&__txt{
+		margin: 0 auto;
+	}
+	&__name{
+		font-size: 42px;
+		font-weight: 600;
+		margin-bottom: 20px;
+	}
+	&__anons{
+		font-size: 22px;
+	}
+	.slick-arrow{
+		position: absolute;
+		top: 230px;
+		display: block;
+		border: none;
+		background-color: transparent;
+		background-image: url("../img/slider__arrow.png");
+		background-size: 100%;
+		background-repeat: no-repeat;
+		width: 39px;
+		height: 78px;
+		text-indent: -99999px;
+		outline: none;
+	}
+	.slick-prev{
+		left: -60px;
+	}
+	.slick-next{
+		right: -60px;
+		transform: rotate(180deg);
+	}
+}
