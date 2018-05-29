@@ -14,10 +14,16 @@
 		line-height: 1;
 		font-weight: bold;
 		text-transform: uppercase;
+		margin: 0;
 	}
 	&__right{
 		display: flex;
 		justify-content: center;
 		align-items: center;
+	}
+	@include r(1024){
+		h1{
+			font-size: 52px;
+		}
 	}
 }

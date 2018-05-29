@@ -42,4 +42,11 @@
 			}
 		}
 	}
+	@include r(1024){
+		&__item{
+			background-size: 100%;
+			width: 180px;
+			height:273px;
+		}
+	}
 }

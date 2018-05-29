@@ -93,6 +93,11 @@
 			margin: 0;
 		}
 	}
+	&__left{
+		width: 350px;
+		flex-shrink: 0;
+		margin-right: 30px;
+	}
 	&__aside {
 		width: 350px;
 		margin: 0 20px 0 0;
@@ -112,7 +117,11 @@
 	}
 	&__banner{
 		margin-top: 25px;
-		width: 350px;
+		max-width: 350px;
+
+		img{
+			max-width: 100%;
+		}
 	}
 	&__head{
 		display: flex;
@@ -165,5 +174,57 @@
 		margin: 0 auto;
 		position: relative;
 		width: 100%;
+	}
+	@include r(1024){
+		.ionTabs {
+			&__head {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				border-bottom: 1px solid #b1b1b1;
+				position: relative;
+				overflow: hidden;
+				&:before,
+				&:after {
+					content: "";
+					display: none;
+				}
+			}
+			&__tab {
+				padding: 20px;
+
+				font-size: 20px;
+				margin-bottom: 0;
+				&:last-of-type{
+					border-right: none;
+				}
+				&_state_active {
+					background: transparent;
+					font-weight: bold;
+				}
+			}
+			&__body {
+				background-color: #fff;
+				width: 100%;
+				border: 1px solid #b1b1b1;
+				padding: 0;
+				.ionTabs__body{
+					border: none;
+				}
+			}
+		}
+		&__left{
+			width: 280px;
+			flex-shrink: 0;
+		}
+		&__aside {
+			width: 100%;
+		}
+		&__arrow{
+			font-size: 22px;
+			padding: 20px;
+		}
+		&__banner{
+		}
 	}
 }

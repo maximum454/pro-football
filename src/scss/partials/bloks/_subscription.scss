@@ -141,4 +141,22 @@
 		outline:none;
 		cursor: pointer;
 	}
+	@include r(1024){
+		&__header{
+			padding: 26px 55px;
+			h3{
+				font-size: 22px;
+			}
+		}
+		&__content{
+			&:after{
+				width: 960px;
+				height: 164px;
+			}
+		}
+		&__item{
+			max-width: 320px;
+			margin: 0 25px;
+		}
+	}
 }

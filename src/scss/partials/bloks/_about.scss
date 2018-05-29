@@ -21,6 +21,8 @@
 			top: -10px;
 			right: -10px;
 			background-image: url("../img/about__after.png");
+			background-repeat: no-repeat;
+			background-size: 100%;
 			width: 471px;
 			height: 984px;
 		}
@@ -77,6 +79,8 @@
 			left: 0;
 			transform: translate(0, -50%);
 			background-image: url("../img/about__logo.png");
+			background-size: 100%;
+			background-repeat: no-repeat;
 			width: 144px;
 			height: 163px;
 		}
@@ -109,6 +113,12 @@
 	}
 	&__img{
 		margin-right: 30px;
+		img{
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
 	}
 	&__txt{
 		color: #3f3f3f;
@@ -137,6 +147,68 @@
 			width: 161px;
 			height: 161px;
 			z-index: -1;
+		}
+	}
+	@include r(1024){
+		p{
+			font-size: 16px;
+		}
+		&__inner{
+			&:after{
+				width: 413px;
+				height: 863px;
+			}
+		}
+		&__header{
+			padding: 26px 55px;
+			h3{
+				font-size: 22px;
+			}
+		}
+		&__title{
+			position: relative;
+			padding-left: 180px;
+			margin-bottom: 50px;
+			line-height: 1;
+			font-weight: bold;
+			text-transform: uppercase;
+			color: #3f3f3f;
+			&:before{
+				width: 100px;
+				height: 114px;
+			}
+			.yellow{
+				font-size: 58px;
+			}
+			.small{
+				font-size: 26px;
+			}
+			.big{
+				font-size: 33px;
+
+			}
+		}
+		&__left{
+			max-width: 550px;
+		}
+		&__item{
+			width: 260px;
+		}
+		&__img{
+			width: 50px;
+			margin-right: 15px;
+		}
+		&__txt{
+			font-size: 12px;
+		}
+		&__video{
+			right: 120px;
+			font-size: 22px;
+			&:after{
+				right: -40px;
+				width: 100px;
+				height: 100px;
+			}
 		}
 	}
 }

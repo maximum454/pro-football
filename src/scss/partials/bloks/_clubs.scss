@@ -137,4 +137,47 @@
 		font-weight: bold;
 		text-transform: uppercase;
 	}
+	@include r(1024){
+		margin-bottom: 145px;
+		&__header{
+			padding: 26px 50px;
+			h3{
+				font-size: 22px;
+			}
+		}
+		&__content{
+			padding: 55px;
+			position: relative;
+			&:before{
+				top: 20px;
+				left: -120px;
+				width: 400px;
+				height: 218px;
+			}
+			&:after{
+				top: -130px;
+				right: -78px;
+				width: 320px;
+				height: 329px;
+				z-index: -1;
+			}
+		}
+		&__title{
+			font-size: 18px;
+			margin-left: 240px;
+			margin-bottom: 20px;
+			&:before{
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 0;
+				transform: translate(0, -50%);
+				background-image: url("../img/subscription__title.png");
+				background-repeat: no-repeat;
+				background-size: 100%;
+				width: 44px;
+				height: 37px;
+			}
+		}
+	}
 }

@@ -1,6 +1,5 @@
 .map{
 	width: 100vw;
-	height: calc(100vh - 181px);
 	background-image: url("../img/map__bg.jpg");
 	background-size: cover;
 	display: flex;
@@ -9,7 +8,6 @@
 	&__inner{
 		position: relative;
 		width: 1528px;
-		min-width: 1528px;
 		img{
 			width: 100%;
 			height: 100%;
@@ -136,9 +134,8 @@
 	}
 	@include r(1366){
 		&__inner{
-			width: 1200px;
-			min-width: 1200px;
-			height: 100%;
+			width: 825px;
+			height: 480px;
 			img{
 				width: auto;
 			}
@@ -150,10 +147,10 @@
 				max-width: 100%	;
 			}
 			&.kost{
-				top: 42px;
-				left: 216px;
-				width: 233px;
-				height: 266px;
+				top: 31px;
+				left: 174px;
+				width: 193px;
+				height: 225px;
 				&:hover{
 					background-image: url("../img/map__kost.png");
 				}
@@ -164,10 +161,10 @@
 
 			}
 			&.astana{
-				top: 81px;
-				left: 372px;
-				width: 253px;
-				height: 189px;
+				top: 68px;
+				left: 305px;
+				width: 205px;
+				height: 125px;
 				&:hover{
 					background-image: url("../img/map__astana.png");
 					color: transparent;
@@ -179,10 +176,10 @@
 
 			}
 			&.karaganda{
-				top: 185px;
-				left: 296px;
-				width: 428px;
-				height: 213px;
+				top: 152px;
+				left: 242px;
+				width: 351px;
+				height: 170px;
 				&:hover{
 					background-image: url("../img/map__karaganda.png");
 					color: transparent;
@@ -194,11 +191,10 @@
 
 			}
 			&.taraz{
-				top: 396px;
-				left: 485px;
-				width: 186px;
-				height: 125px;
-
+				top: 323px;
+				left: 396px;
+				width: 153px;
+				height: 106px;
 				&:hover{
 					background-image: url("../img/map__taraz.png");
 					color: transparent;
@@ -210,10 +206,10 @@
 
 			}
 			&.shimkent{
-				top: 396px;
-				left: 369px;
-				width: 165px;
-				height: 185px;
+				top: 322px;
+				left: 298px;
+				width: 138px;
+				height: 160px;
 				&:hover{
 					background-image: url("../img/map__shimkent.png");
 					color: transparent;
@@ -225,11 +221,10 @@
 
 			}
 			&.almaty{
-				top: 344px;
-				right: 332px;
-				width: 249px;
-				height: 173px;
-
+				top: 283px;
+				right: 115px;
+				width: 203px;
+				height: 150px;
 				&:hover{
 					background-image: url("../img/map__almaty.png");
 					color: transparent;

@@ -98,6 +98,11 @@
 			max-width: 550px;
 		}
 	}
+	@include r(1024) {
+		&__inner {
+			flex-wrap: wrap;
+		}
+	}
 	.jq-selectbox {
 		vertical-align: middle;
 		cursor: pointer;

@@ -91,4 +91,12 @@
 			 padding: 30px 48px;
 		 }
 	 }
+	@include r(1024){
+		&__header{
+			padding: 26px 55px;
+			h3{
+				font-size: 22px;
+			}
+		}
+	}
 }
