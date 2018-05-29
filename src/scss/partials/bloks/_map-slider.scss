@@ -6,10 +6,9 @@
 	z-index: 10;
 	@include r(1366){
 		width: 300px;
-		bottom: 150px;
+
 	}
 	@include r(1024){
 		width: 225px;
-		bottom: 150px;
 	}
 }
