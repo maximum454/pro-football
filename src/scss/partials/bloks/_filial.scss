@@ -170,10 +170,7 @@
 		padding: 60px;
 	}
 	&__slider{
-		max-width: 794px;
-		margin: 0 auto;
-		position: relative;
-		width: 100%;
+
 	}
 	@include r(1024){
 		.ionTabs {

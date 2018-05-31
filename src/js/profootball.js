@@ -1,6 +1,6 @@
 //= partials/jquery.min.js
 //= partials/ion.tabs.js
-//= partials/slick.min.js
+//= partials/slick.js
 //= partials/jquery.arcticmodal-0.3.min.js
 //= partials/jquery.formstyler.js
 //= partials/masonry.pkgd.js
