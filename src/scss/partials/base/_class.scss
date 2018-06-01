@@ -70,4 +70,10 @@ html, body{
 		top: 77px;
 		opacity: 1;
 	}
+	&.fix{
+		position: absolute;
+		top: 0;
+		right: 0;
+		opacity: 1;
+	}
 }
