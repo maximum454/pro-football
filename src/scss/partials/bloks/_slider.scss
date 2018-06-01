@@ -52,4 +52,7 @@
 		right: -60px;
 		transform: rotate(180deg);
 	}
+	@include r(1366){
+		width: 640px;
+	}
 }

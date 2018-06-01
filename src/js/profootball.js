@@ -3,7 +3,6 @@
 //= partials/slick.js
 //= partials/jquery.arcticmodal-0.3.min.js
 //= partials/jquery.formstyler.js
-//= partials/masonry.pkgd.js
 
 $(function () {
     $(window).scroll(function () {
@@ -35,7 +34,28 @@ $(function () {
     });
 
 
-    $.ionTabs("#tabs_1, #tabs_2, #tabs_3", {
+    $.ionTabs(".js-tabs", {
+        type: "storage",
+        onChange: function (obj) {
+            $('.js-slider').slick({
+                autoplay: false,
+                dots: false,
+                arrows: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                adaptiveHeight: true,
+                cssEase: 'linear'
+            });
+        }
+    });
+    $.ionTabs(".js-filial", {
+        type: "storage",
+        onChange: function (obj) {
+
+        }
+    });
+    $.ionTabs(".js-tournaments", {
         type: "storage",
         onChange: function (obj) {
 
@@ -51,16 +71,7 @@ $(function () {
         fade: true,
         cssEase: 'linear'
     });
-    $('.js-slider').slick({
-        autoplay: false,
-        dots: false,
-        arrows: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        adaptiveHeight: true,
-        cssEase: 'linear'
-    });
+
 
 
 });
